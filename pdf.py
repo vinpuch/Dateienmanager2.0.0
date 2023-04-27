@@ -3,10 +3,11 @@ import getpass
 import glob
 import subprocess
 import shutil
+from main import *
 
 
 def pdf(path):
-    dateien_suche = glob.glob(os.path.join((path, ".pdf")) & os.path.join((path, ".PDF")))
+    dateien_suche = glob.glob(os.path.join(path, "*.pdf")) + glob.glob(os.path.join(path, "*.PDF"))
 
     print(dateien_suche)
 
