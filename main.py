@@ -2,12 +2,10 @@ import getpass
 import os
 import platform
 import sys
-import anki
-import bilder
-import excel
-import pdf
-import word
-import zip
+import glob
+from pdf import pdf
+
+
 
 
 def main():
@@ -19,12 +17,12 @@ def main():
     elif sys.platform == "linux":
         path="/home/user/Downloads"
     
-    anki(path)
-    bilder(path)
-    excel(path)
+   # anki(path)
+   # bilder(path)
+   # excel(path)
     pdf(path)
-    word(path)
-    zip(path)
+   # word(path)
+    # zip(path)
 
     
 
