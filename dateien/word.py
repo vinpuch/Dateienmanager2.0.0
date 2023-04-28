@@ -3,15 +3,15 @@ import getpass
 import glob
 import subprocess
 import shutil
-from main import *
+import main
 
 
-def pdf(path):
-    dateien_suche = glob.glob(os.path.join(path, "*.pdf")) + glob.glob(os.path.join(path, "*.PDF"))
+def word_p(path):
+    dateien_suche = glob.glob(os.path.join(path, "*.xlsx"))
 
     print(dateien_suche)
 
-    zielordner = path + "/PDF"
+    zielordner = path + "Word"
 
     if not os.path.exists(zielordner):
         os.makedirs(zielordner)
@@ -24,6 +24,4 @@ def pdf(path):
         else:
             shutil.move(datei, ziel)
             print(f"{datei} wurde nach {ziel} verschoben.")
-
-
 

@@ -1,4 +1,4 @@
-import pdf
+from dateien.pdf import pdf_ready
 import os
 import shutil
 
@@ -16,7 +16,7 @@ def test_pdf_function():
             f.write("Test PDF content")
 
     # Rufe die pdf()-Funktion mit dem temporären Ordnerpfad auf
-    pdf(test_dir)
+    pdf_ready(test_dir)
 
     # Überprüfe, ob die PDF-Dateien erfolgreich in den Zielordner verschoben wurden
     expected_dir = os.path.join(test_dir, "PDF")
