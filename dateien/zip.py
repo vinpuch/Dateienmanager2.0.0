@@ -7,7 +7,7 @@ import main
 
 
 def zip(path):
-    dateien_suche = glob.glob(os.path.join((path, ".zip")))
+    dateien_suche = glob.glob(os.path.join(path, ".zip"))
 
     print(dateien_suche)
 

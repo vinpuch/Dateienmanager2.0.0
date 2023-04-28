@@ -7,15 +7,13 @@ import main
 
 
 def bilder(path):
-    dateien_suche = glob.glob(os.path.join((path, "*.jpeg")) 
-                              & os.path.join((path, "*.jpg")) 
-                              & os.path.join((path, "*.png")) 
-                              & os.path.join((path, "*.gif")) 
-                              & os.path.join((path, "*.bmp")) 
-                              & os.path.join((path, "*.tiff")) 
-                              & os.path.join((path, "*.tif")))
-
-    print(dateien_suche)
+   dateien_suche = glob.glob(os.path.join(path, "*.jpeg") 
+                          + os.path.join(path, "*.jpg") 
+                          + os.path.join(path, "*.png") 
+                          + os.path.join(path, "*.gif") 
+                          + os.path.join(path, "*.bmp") 
+                          + os.path.join(path, "*.tiff") 
+                          + os.path.join(path, "*.tif"))
 
     zielordner = path + "Bilder"
 

@@ -7,7 +7,7 @@ import main
 
 
 def anki(path):
-    dateien_suche = glob.glob(os.path.join((path, "*.apkg")))
+    dateien_suche = glob.glob(os.path.join(path, "*.apkg"))
 
     print(dateien_suche)
 

@@ -7,7 +7,7 @@ import main
 
 
 def excel(path):
-    dateien_suche = glob.glob(os.path.join((path, "*.xlsx")))
+    dateien_suche = glob.glob(os.path.join(path, "*.xlsx"))
 
     print(dateien_suche)
 
