@@ -3,11 +3,11 @@ import getpass
 import glob
 import subprocess
 import shutil
-import main
 
 
 def word_p(path):
-    dateien_suche = glob.glob(os.path.join(path, "*.xlsx"))
+    dateien_suche = glob.glob(os.path.join(os.path.join(path, "*.docx")
+                              + os.path.join(path, "*.xlsx")))
 
     print(dateien_suche)
 
@@ -24,4 +24,3 @@ def word_p(path):
         else:
             shutil.move(datei, ziel)
             print(f"{datei} wurde nach {ziel} verschoben.")
-

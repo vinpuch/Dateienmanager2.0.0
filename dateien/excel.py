@@ -3,7 +3,6 @@ import getpass
 import glob
 import subprocess
 import shutil
-import main
 
 
 def excel(path):

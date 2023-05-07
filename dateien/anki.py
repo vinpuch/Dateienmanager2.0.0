@@ -3,7 +3,6 @@ import getpass
 import glob
 import subprocess
 import shutil
-import main
 
 
 def anki(path):
@@ -24,6 +23,3 @@ def anki(path):
         else:
             shutil.move(datei, ziel)
             print(f"{datei} wurde nach {ziel} verschoben.")
-
-
-
